@@ -1,0 +1,42 @@
+Data_emissao;Codigo_pedido;Nome_Cliente;Endereco;Codigo_Produto;Nome_Produto;Valor;Quantidade;Valor_Total
+01/01/2022;001;Joao Silva;Rua A, 123;P001;Smartphone;1000;2;2000
+02/01/2022;002;Maria Oliveira;Rua B, 456;P002;Laptop;1500;3;4500
+03/01/2022;003;Carlos Santos;Rua C, 789;P003;Tablet;1200;4;4800
+04/01/2022;004;Ana Pereira;Rua D, 321;P004;Headphone;800;2;1600
+05/01/2022;005;Lucas Lima;Rua E, 654;P005;Smartwatch;400;5;2000
+06/01/2022;006;Fernanda Costa;Rua F, 987;P006;Camera DSLR;700;3;2100
+07/01/2022;007;Ricardo Souza;Rua G, 147;P007;Impressora;900;2;1800
+08/01/2022;008;Mariana Fernandes;Rua H, 258;P008;Monitor;360;6;2160
+09/01/2022;009;Gustavo Rocha;Rua I, 369;P009;Teclado mecanico;440;4;1760
+10/01/2022;010;Camila Santos;Rua J, 987;P010;Mouse sem fio;760;2;1520
+11/01/2022;011;Pedro Oliveira;Rua K, 654;P011;HD Externo;560;3;1680
+12/01/2022;012;Amanda Lima;Rua L, 321;P012;Caixa de som Bluetooth;640;4;2560
+13/01/2022;013;Daniel Pereira;Rua M, 654;P013;Roteador Wi-Fi;300;5;1500
+14/01/2022;014;Isabela Costa;Rua N, 987;P014;Mochila para laptop;840;2;1680
+15/01/2022;015;Fabio Silva;Rua O, 258;P015;Carregador portatil;960;3;2880
+16/01/2022;016;Larissa Fernandes;Rua P, 369;P016;Camera de seguranca;500;4;2000
+17/01/2022;017;Roberto Rocha;Rua Q, 654;P017;Auriculares sem fio;600;2;1200
+18/01/2022;018;Aline Lima;Rua R, 987;P018;Teclado sem fio;800;3;2400
+19/01/2022;019;Vinicius Oliveira;Rua S, 258;P019;Mesa para computador;360;5;1800
+20/01/2022;020;Clara Costa;Rua T, 369;P020;Estabilizador;700;2;1400
+21/01/2022;021;Gabriel Souza;Rua U, 654;P021;Caixa de som USB;440;3;1320
+22/01/2022;022;Luana Fernandes;Rua V, 987;P022;Hub USB;560;4;2240
+23/01/2022;023;Diego Rocha;Rua W, 258;P023;Mouse gamer;760;2;1520
+24/01/2022;024;Eduarda Lima;Rua X, 369;P024;Webcam;900;3;2700
+25/01/2022;025;Rafael Oliveira;Rua Y, 654;P025;Fone de ouvido com cancelamento de ruido;400;4;1600
+26/01/2022;026;Bianca Costa;Rua Z, 987;P026;Adaptador USB-C;600;2;1200
+27/01/2022;027;Hugo Silva;Rua AA, 258;P027;Carregador sem fio;800;3;2400
+28/01/2022;028;Sophia Fernandes;Rua BB, 369;P028;Cabo HDMI;360;5;1800
+29/01/2022;029;Alex Rocha;Rua CC, 654;P029;Cooler para laptop;700;2;1400
+30/01/2022;030;Isadora Lima;Rua DD, 987;P030;Suporte para celular;440;3;1320
+31/01/2022;031;Caua Oliveira;Rua EE, 258;P031;Luminaria LED;560;4;2240
+01/02/2022;032;Lara Souza;Rua FF, 369;P032;Caixa de som Bluetooth portatil;760;2;1520
+02/02/2022;033;Enzo Fernandes;Rua GG, 654;P033;Hub USB-C;500;3;1500
+03/02/2022;034;Melissa Rocha;Rua HH, 987;P034;Carregador universal;600;4;2400
+04/02/2022;035;Miguel Lima;Rua II, 258;P035;Cabo USB-C;300;5;1500
+05/02/2022;036;Yasmin Oliveira;Rua JJ, 369;P036;Suporte para notebook;840;2;1680
+06/02/2022;037;Antonio Costa;Rua KK, 654;P037;Hub USB 3.0;960;3;2880
+07/02/2022;038;Luiza Silva;Rua LL, 987;P038;Carregador portatil solar;500;4;2000
+08/02/2022;039;Davi Fernandes;Rua MM, 258;P039;Mochila para camera;700;2;1400
+09/02/2022;040;Laura Rocha;Rua NN, 369;P040;Adaptador de tomada internacional;440
+
