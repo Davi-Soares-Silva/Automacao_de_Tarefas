@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de Nota Fiscal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #notasList {
+            margin-top: 20px;
+        }
+
+        .nota {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emissão de Nota Fiscal</h1>
+    </header>
+    <section>
+        <form id="notaForm">
+
+            <label for="dataEmissao">Data de Emissão:</label>
+            <input type="text" id="dataEmissao" name="dataEmissao" required>
+
+            <label for="codigoPedido">Código do Pedido:</label>
+            <input type="text" id="codigoPedido" name="codigoPedido" required>
+
+            <label for="nomeCliente">Nome do Cliente:</label>
+            <input type="text" id="nomeCliente" name="nomeCliente" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="codigoProduto">Código do Produto:</label>
+            <input type="text" id="codigoProduto" name="codigoProduto" required>
+
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
+
+            <label for="valor">Valor:</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="valorTotal">Valor Total:</label>
+            <input type="text" id="valorTotal" name="valorTotal" required>
+
+            <button type="button" onclick="criarNota()">Criar Nota Fiscal</button>
+            <button type="reset">Limpar Campos</button>
+	
+        </form>
+
+        <div id="notasList">
+            <h2>Notas Criadas</h2>
+            <ul id="notasUl"></ul>
+        </div>
+    </section>
+
+              
+
+    <script>
+        function criarNota() {
+            // Obter os valores dos campos
+            var nomeCliente = document.getElementById("nomeCliente").value;
+            var endereco = document.getElementById("endereco").value;
+            var nomeProduto = document.getElementById("nomeProduto").value;
+            var valor = document.getElementById("valor").value;
+            var quantidade = document.getElementById("quantidade").value;
+            var codigoProduto = document.getElementById("codigoProduto").value;
+            var codigoPedido = document.getElementById("codigoPedido").value;
+            var valorTotal = document.getElementById("valorTotal").value;
+            var dataEmissao = document.getElementById("dataEmissao").value;
+
+            // Criar o conteúdo da nota
+            var conteudoNota = `
+                <div class="nota">
+                    <strong>Nota Fiscal</strong><br><br>
+                    <strong>Data de Emissão:</strong> ${dataEmissao}<br>
+                    <strong>Código do Pedido:</strong> ${codigoPedido}<br>
+                    <strong>Nome do Cliente:</strong> ${nomeCliente}<br>
+                    <strong>Endereço:</strong> ${endereco}<br>
+                    <strong>Código do Produto:</strong> ${codigoProduto}<br>
+                    <strong>Nome do Produto:</strong> ${nomeProduto}<br>
+                    <strong>Valor:</strong> ${valor}<br>
+                    <strong>Quantidade:</strong> ${quantidade}<br>
+                    <strong>Valor Total:</strong> ${valorTotal}<br>
+                </div>
+            `;
+
+            // Adicionar a nota à lista
+            document.getElementById("notasUl").innerHTML += conteudoNota;
+
+            // Limpar todos os campos do formulário
+            document.getElementById("notaForm").reset();
+        }
+    </script>
+</body>
+</html>
